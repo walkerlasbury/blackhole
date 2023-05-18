@@ -6,20 +6,24 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <script type='text/javascript'>
+        alert('Welcome to Black Hole Sim, here are a couple notes:\n\n1. When particles cross the event horizon of a Black Hole, we aren\'t quite sure where they go...In this simulation, if a particle crosses the event horizon it gets shot out into outer space at unimaginable speeds.\n2. Particles that are being affected by the gravity of the Black Hole will turn red.\n3. Astronomers believe that supermassive Black Holes lie at the center of virtually all large galaxies, even our own Milky Way.\n4. For a challenge, try to get a particle to orbit the Black Hole!\n\nThanks for checking it out!\n\n- Walker');
+     </script>
+        
     <canvas id="canvas"></canvas>
     <div class="controls">
         <label for="particleSize"><b>Black Hole Simulator</b></label><br>
-        <label for="particleSize"><I>By: Walker Lasbury</I></label>
-        <label for="particleSize"><I>Aided by ChatGPT</I></label>
+        <label for="particleSize"><i>By: Walker Lasbury</i></label>
+        <label for="particleSize"><i>Aided by ChatGPT</i></label>
         <br>
         <label for="gravityStrength">Gravity Strength:</label>
-        <input type="range" id="gravityStrength" min="1" max="100" value="75" step="1">
+        <input type="range" id="gravityStrength" min="1" max="100" value="100" step="1">
         <span id="gravityStrengthLabel">5</span><br>
         <label for="particleSize">Average Particle Size:</label>
         <input type="range" id="particleSize" min="1" max="10" value="5" step="1">
         <span id="particleSizeLabel">5</span>
     </div>
-
+   
     <script src="script.js"></script>
 </body>
 </html>
